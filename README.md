@@ -19,7 +19,7 @@ Welcome to B[U]ILT UIUC's club website repository! Here you will find the curren
  3. JavaScript
  3. CSS
 
- In the feature we will most likely use Microsoft Azure for their cloud computing services and hosting capabilities.
+ In the future we will most likely use Microsoft Azure for their cloud computing services and hosting capabilities.
 
 ## Best Practices
 

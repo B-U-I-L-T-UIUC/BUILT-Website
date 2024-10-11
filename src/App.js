@@ -1,7 +1,7 @@
 import React from 'react';
 import HomePage from './pages/homePage';
 import AboutPage from './pages/aboutPage';
-import GetInvolved from './pages/getInvolved';
+import GetInvolvedPage from './pages/getInvolvedPage';
 import CalendarPage from './pages/calendarPage';
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import './App.css';
@@ -21,7 +21,7 @@ function App() {
                                 <Link to="/About">About</Link>
                             </li>
                             <li>
-                                <Link to="/GetInvolved">Get Involved</Link>
+                                <Link to="/GetInvolvedPage">Get Involved</Link>
                             </li>
                             <li>
                                 <Link to="/Calendar">Calendar</Link>
@@ -31,7 +31,7 @@ function App() {
                     <Routes>
                         <Route path="/Home" element={<HomePage />} />
                         <Route path="/About" element={<AboutPage />} />
-                        <Route path='/GetInvolved' element={<GetInvolved />} />
+                        <Route path='/GetInvolvedPage' element={<GetInvolvedPage />} />
                         <Route path='/Calendar' element={<CalendarPage />} />
                     </Routes>
                 </Router>

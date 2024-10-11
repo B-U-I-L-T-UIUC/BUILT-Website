@@ -1,7 +1,7 @@
 import React from 'react';
-import '../styles/getInvolved.css';
+import '../styles/getInvolvedPage.css';
 
-function GetInvolved() {
+function GetInvolvedPage() {
     return (
         <div className="GetInvolved">
             <header className="GetInvolved-header">
@@ -12,4 +12,4 @@ function GetInvolved() {
     );
 }
 
-export default GetInvolved;
+export default GetInvolvedPage;

@@ -1,5 +1,9 @@
 import React from 'react';
 import '../styles/aboutPage.css';
+import CardSlider from '../components/cardslider.js';
+
+
+
 
 function AboutPage() {
     return (
@@ -8,6 +12,7 @@ function AboutPage() {
                 <h1>About Us</h1>
                 <p>Welcome to the about page!</p>
             </header>
+            <CardSlider/>
         </div>
     );
 }

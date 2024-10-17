@@ -1,6 +1,6 @@
 /* Styles for the footer component */
 
-.footer div {
+footer div {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -13,19 +13,19 @@
     background-color: #DB9066;
     padding: 20px;
     height: 60px;
-    align-items: center;
     display: flex;
     justify-content: center;
+    align-items: center;
+    margin-top: auto; /* Pushes footer to bottom */
+    width: 100%; /* Ensure footer stretches to the width */
 }
 
-.footer img{
+.footer img {
     width: 35px;
     height: 35px;
     margin: 0 10px;
-    
 }
 
 .footer img:hover {
     transform: scale(1.1);
-   
 }

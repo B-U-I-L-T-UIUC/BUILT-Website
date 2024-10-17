@@ -21,13 +21,12 @@ function App() {
                         <Route path="/" element={<Navigate to="/Home" />} />
                         <Route path="/Home" element={<HomePage />} />
                         <Route path="/About" element={<AboutPage />} />
-                        <Route path="/GetInvolvedPage" element={<GetInvolvedPage />} />
+                        <Route path="/Get-Involved" element={<GetInvolvedPage />} />
                         <Route path="/Calendar" element={<CalendarPage />} />
                     </Routes>
                 </main>
-
-                <Footer/>
             </Router>
+            <Footer/>
 
         </div>
     );

@@ -1,35 +1,38 @@
 .navbar-wrapper {
-    margin-top: 5px; 
-  }
+  margin-top: 5px;
+  width: 100%; /* Full width of the viewport */
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
 
-  .navbar {
-    position: sticky;
-    top: 0px; 
-    width: 100%;
-    z-index: 1000;
-    display: flex;
-    justify-content: flex-end;
-    padding-right: 20px;
-    padding-top: 10px;
-    gap: 10px;
-    font-family: 'Inter', sans-serif;
-  }
+.navbar {
+  position: sticky;
+  top: 0px;
+  width: 100%; /* Ensure the navbar spans the full width of the viewport */
+  display: flex;
+  justify-content: flex-end; /* Align buttons to the right */
+  padding-right: 20px; /* Ensure there's space between the navbar and the right edge */
+  padding-top: 10px;
+  gap: 10px;
+  font-family: 'Inter', sans-serif;
+  box-sizing: border-box; /* Ensure padding is included in the width calculation */
+}
 
-  .button {
-    background-color: #DB9066;
-    border: none;
-    color: black;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    border-radius: 50px;
-    font-family: 'Inter', sans-serif;
-  }
+.button {
+  background-color: #DB9066;
+  border: none;
+  color: black;
+  padding: 15px 32px; /* Keep the same size for the buttons */
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 50px;
+  font-family: 'Inter', sans-serif;
+  white-space: nowrap; /* Prevent text wrapping inside the buttons */
+  box-sizing: border-box; /* Ensure padding is included in button width */
+}
 
-  .button:hover {
-    color: #000000;
-    background-color: rgb(243, 221, 205);
-  }
-  
+.button:hover {
+  color: #000000;
+  background-color: rgb(243, 221, 205);
+}

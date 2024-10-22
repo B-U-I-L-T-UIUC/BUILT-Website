@@ -12,10 +12,6 @@ function App() {
     return (
         <div className="App">
             <Router>
-                {/*replaced nav with navbar*/ }
-
-                <StickyNavBar />
-              
                 <main className="App-main"> 
                     <Routes>
                         <Route path="/" element={<Navigate to="/Home" />} />

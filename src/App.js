@@ -4,7 +4,7 @@ import AboutPage from './pages/aboutPage';
 import GetInvolvedPage from './pages/getInvolvedPage';
 import CalendarPage from './pages/calendarPage';
 import Footer from './components/footer';
-import { BrowserRouter as Router, Routes, Route, Link, Navigate } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 import StickyNavBar from './components/stickyNavBar'
 import './App.css';
 

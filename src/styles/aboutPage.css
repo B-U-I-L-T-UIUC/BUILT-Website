@@ -1,0 +1,11 @@
+/* Styles for the about page. */
+
+.About-Page {
+    background-color: #FFE7D7;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    flex:1;
+    width: 100%;
+}

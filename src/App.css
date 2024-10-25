@@ -8,6 +8,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
 }
 
@@ -18,6 +19,7 @@ body {
 }
 
 .App-main {
+    height: 100vh;
     flex-grow: 1; 
     display: flex;
     flex-direction: column;

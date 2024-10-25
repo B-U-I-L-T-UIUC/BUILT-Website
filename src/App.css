@@ -1,15 +1,15 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
 body {
     background-image: url('../public/built-background.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
-}
-
-
-html, body {
-    height: 100%;
-    margin: 0;
 }
 
 .App {
@@ -18,9 +18,10 @@ html, body {
     min-height: 100vh;
 }
 
-
 .App-main {
-    flex-grow: 1; /* Ensures the main content takes up available space */
+    height: 100vh;
+    flex-grow: 1; 
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
 }
-
-

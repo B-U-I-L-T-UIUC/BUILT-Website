@@ -1,10 +1,11 @@
 import {Swiper, SwiperSlide} from 'swiper/react';
-import {Pagination, FreeMode, Autoplay} from 'swiper/modules';
+import {Pagination, Autoplay, Navigation} from 'swiper/modules';
 
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/free-mode';
 import 'swiper/css/autoplay';
+import 'swiper/css/navigation';
 
 import '../styles/cardSlider.css';
 
@@ -15,11 +16,11 @@ function CardSlider() {
         <div className='wrapper'>
             <Swiper
                 loop={true}
-                modules={[Pagination, FreeMode, Autoplay]}
+                modules={[Pagination, Autoplay, Navigation]}
                 pagination={{clickable: true}}
-                freeMode={true}
+                navigation
                 autoplay={{
-                    delay: 5000,
+                    delay: 500000,
                     disableOnInteraction: false,
                     pauseOnMouseEnter: true,
                 }}
@@ -29,15 +30,15 @@ function CardSlider() {
                 onSwiper={(swiper) => console.log(swiper)}
                 className='swiper'
             >
-
+            
                 {data.map((item) => (
                     <SwiperSlide className='slides'>
                         <div className='cards'>
                             <h1><span className='brown'>{item.title}</span></h1>
                             <h2><span className='brown'>{item.name}</span></h2>
-                            <p>{item.pronouns}</p>
-                            <p>{item.email}</p>
-                            <p>{item.description}</p>
+                            <p className='cardText'>{item.pronouns}</p>
+                            <p className='cardText'>{item.email}</p>
+                            <p className='cardText'>{item.description}</p>
                         </div>
                         <div className='imgcontainer'>
                             <img className='image' src={item.image} alt='e-board'/>
@@ -57,9 +58,10 @@ function CardSlider() {
 export default CardSlider;
 
 
+
 const data = [
     {
-        image: '/e-board.png',
+        image: 'eboard-elissa.png',
         title: "President",
         name: "Elisa Carillo",
         pronouns: "she/her",
@@ -67,11 +69,72 @@ const data = [
         description: "Lorem ipsum..."
     },
     {
-        image: '/coffee-social.png',
-        title: "Placeholder",
-        name: "Adrian Vargas",
+        image: '/eboard-melissa.png',
+        title: "Vice President",
+        name: "Melissa Aninagyei-Bonsu",
+        pronouns: "she/her",
+        email: "Placeholder",
+        description: "Hey I'm Melissa. I'm a Junior studying Computer Science and minoring in Statistics! I am a CS STAR - CS Research Ambassador, and an Undergraduate Research Assistant! My hobbies include running track, watching Tiktok, and doing my hair, makeup, and nails! Catch me in the office on the daily!"
+    },
+    {
+        image: '/eboard-adrian.png',
+        title: "Treasurer",
+        name: "Adrian Lara",
         pronouns: "he/him",
-        email: "avarga@illinois.edu",
-        description: "test description"
+        email: "ajlara279@gmail.com",
+        description: "Placeholder"
+
+    },
+    {
+        image: '/eboard-libby.png',
+        title: "Internal Director",
+        name: "Libby Codamon",
+        pronouns: "she/her",
+        email: "ecoda2@illinois.edu",
+        description: "Hi! My name is Libby Codamon, and I am a senior studying Computer Science with a minor in the Hoeft Technology & Management Program. I am from the southside of Chicago near Midway Airport and come from a big Honduran-Puerto Rican family – I’m one of five siblings! I am the Internal Director for B[U]ILT and do new member programming and activities for freshmen and transfer students, like hosting weekly Study Hours on Tuesday nights at Siebel CS. I love cats, cooking, and theme parks! I also recently picked up coloring and playing pickleball. "
+
+    },
+    {
+        image: '/eboard-adela.png',
+        title: "Social Director",
+        name: "Adela Bautista Martinez",
+        pronouns: "she/her",
+        email: "adelab2@illinois.edu",
+        description: "Hi!! My name is Adela, I’m a second year cs + phil and psychology major from Evanston, IL. I’m excited to continue to build and grow our built community. In my free time I like traveling, eating, and watching tv. Feel free to reach out for anything!"
+    },
+    {
+        image: '/eboard-alejandro.png',
+        title: "External Director",
+        name: "Alejandro Chavez",
+        pronouns: "he/him",
+        email: "achav8@illinois.edu",
+        description: "Hi, I’m Alejandro Chavez I’m a senior studying Computer Science + Economics and I’m from Chicago, IL. In my free time I enjoy going to the gym, watching sports, and spending time with friends and family." 
+    },
+    {
+        image: 'eboard-bolden.jpg',
+        title: "Infrastructure Director",
+        name: "Bolden Jones",
+        pronouns: "he/him",
+        email: "boldenj2@illinois.edu",
+        description: "Hi my name is Bolden! I am a third year CS major with a minor in statistics, from Flossmoor, IL. As this year's infrastructure director I am excited to lead technical projects advancing our members' technical skills. In my free time I like to go to the gym, play volleyball, and watch anime."
+    },
+    {
+        image: '/eboard-alexis.jpg',
+        title: "Outreach Director",
+        name: "Alexis Serrano",
+        pronouns: "he/him",
+        email: "aserrano0031@gmail.com",
+        description: "Hi, my name is Alexis Serrano, and I’m a fourth year Undergraduate student studying Computer Science. I’m from Berwyn, Illinois and really enjoy playing Tennis (and pickleball), listening to music, and running. As part of B[U]ILT, I’m the Outreach Director, and I look forward to expanding our CS community and helping students explore CS@UIUC. "
+    },
+    {
+        image: '/eboard-simon.png',
+        title: "Placeholder",
+        name: "Simon Kato",
+        pronouns: "he/him",
+        email: "sk106@illinois.edu",
+        description: "Hi, I am a third-year Ph.D. candidate in computer science studying decision-making under uncertainty. In my free time, I enjoy rock climbing, running, and cooking." 
+    },
+    {
+        image: '/eboard-simon.png'
     }
 ]

@@ -5,7 +5,6 @@ import '../styles/stickyNavBar.css';
 const StickyNavBar = () => {
 
   return (
-    <>
       <div className="navbar-wrapper">
         <div className="navbar">
           <Link to="/Home" className="button">Home</Link>
@@ -14,7 +13,6 @@ const StickyNavBar = () => {
           <Link to="/Get-Involved" className="button">Get Involved</Link>
         </div>
       </div>
-    </>
   );
 };
 

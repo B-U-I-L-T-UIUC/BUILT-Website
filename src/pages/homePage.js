@@ -1,6 +1,7 @@
 import React from 'react';
 import StickyNavBar from '../components/stickyNavBar';
 import '../styles/homePage.css';
+import HeaderTransparent from '../components/headerTransparent.js'
 
 function HomePage() {
     return (

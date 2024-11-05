@@ -1,12 +1,11 @@
 import {Swiper, SwiperSlide} from 'swiper/react';
-import {Pagination, Autoplay, Navigation} from 'swiper/modules';
+import {Autoplay, Navigation, Pagination} from 'swiper/modules';
 
 import 'swiper/css';
-import 'swiper/css/pagination';
 import 'swiper/css/free-mode';
 import 'swiper/css/autoplay';
 import 'swiper/css/navigation';
-
+import 'swiper/css/pagination';
 import '../styles/cardSlider.css';
 
 
@@ -16,9 +15,9 @@ function CardSlider() {
         <div className='wrapper'>
             <Swiper
                 loop={true}
-                modules={[Pagination, Autoplay, Navigation]}
-                pagination={{clickable: true}}
+                modules={[Autoplay, Navigation, Pagination]}
                 navigation
+                pagination={{ clickable: true }}
                 autoplay={{
                     delay: 500000,
                     disableOnInteraction: false,
@@ -34,9 +33,8 @@ function CardSlider() {
                 {data.map((item) => (
                     <SwiperSlide className='slides'>
                         <div className='cards'>
-                            <h1><span className='brown'>{item.title}</span></h1>
-                            <h2><span className='brown'>{item.name}</span></h2>
-                            <p className='cardText'>{item.pronouns}</p>
+                            <h1 className='eboard-title'><span className='brown'>{item.title}</span></h1>
+                            <h2 className='eboard-subtitle'><span className='brown'>{item.name} ({item.pronouns})</span></h2>
                             <p className='cardText'>{item.email}</p>
                             <p className='cardText'>{item.description}</p>
                         </div>
@@ -91,7 +89,7 @@ const data = [
         name: "Libby Codamon",
         pronouns: "she/her",
         email: "ecoda2@illinois.edu",
-        description: "Hi! My name is Libby Codamon, and I am a senior studying Computer Science with a minor in the Hoeft Technology & Management Program. I am from the southside of Chicago near Midway Airport and come from a big Honduran-Puerto Rican family – I’m one of five siblings! I am the Internal Director for B[U]ILT and do new member programming and activities for freshmen and transfer students, like hosting weekly Study Hours on Tuesday nights at Siebel CS. I love cats, cooking, and theme parks! I also recently picked up coloring and playing pickleball. "
+        description: "Hi! My name is Libby Codamon, and I am a senior studying Computer Science with a minor in the Hoeft Technology & Management Program. I am from the southside of Chicago near Midway Airport and come from a big Honduran-Puerto Rican family – I’m one of five siblings! I love cats, cooking, and theme parks! I also recently picked up coloring and playing pickleball. "
 
     },
     {
@@ -134,7 +132,5 @@ const data = [
         email: "sk106@illinois.edu",
         description: "Hi, I am a third-year Ph.D. candidate in computer science studying decision-making under uncertainty. In my free time, I enjoy rock climbing, running, and cooking." 
     },
-    {
-        image: '/eboard-simon.png'
-    }
+    
 ]

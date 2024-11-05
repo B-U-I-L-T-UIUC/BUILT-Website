@@ -14,6 +14,7 @@
     width: 45%;
     text-align: center;
     padding-left: 2rem;
+    padding-top: 1rem;
 }
 
 .wrapper {
@@ -25,6 +26,7 @@
     max-width: 750px;
     margin-inline: auto;
     box-shadow: 5px 10px 3px rgba(0, 0, 0, 0.5);
+    margin-bottom: 4rem;
 }
 
 .swiper {
@@ -39,7 +41,7 @@
 }
 
 .cardText {
-    font-size: .75rem;
+    font-size: .9rem;
 }
 
 .image {
@@ -56,12 +58,16 @@
     width: 55%;
 }
 
-.brown {
-    color: #51210D;
+
+
+.eboard-title {
+    margin-top: 1rem;
+    margin-bottom: .5rem;
+    font-size: 1.75rem;
 }
-
-
-
+.eboard-subtitle {
+    font-size: 16px;
+}
 @media only screen and (max-width: 600px) {
     .wrapper {
         max-width: 70%;

@@ -1,0 +1,48 @@
+.carousel-container {
+  position: relative;
+  border-radius: 5%;
+  height: 400px;
+  margin: auto;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.carousel-image {
+  height: 100%; 
+  border-radius: 10%;
+  object-fit: contain;
+  transition: opacity 1s ease-in-out;
+}
+
+.fade-in {
+  opacity: 1;
+}
+
+.fade-out {
+  opacity: 0;
+}
+
+/* Dot styling */
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px; /* Adds space between the image and dots */
+  margin-bottom: 10px;
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  margin: 0 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.dot.active {
+  background-color: #717171;
+}

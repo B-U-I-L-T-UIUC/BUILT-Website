@@ -14,7 +14,7 @@ Welcome to B[U]ILT UIUC's club website repository! Here you will find the curren
 
  Our current tech stack includes the use of:
 
- 1. React
+ 1. React.js
  2. HTML
  3. JavaScript
  3. CSS
@@ -33,7 +33,7 @@ Welcome to B[U]ILT UIUC's club website repository! Here you will find the curren
 
  A branch should be named with a proper name as well to signal to others what the purpose of the banch is, who is working on the branch, and where a feature will be located. 
 
- For example a branch for a rotating photo carosoul feature on an about page by Steven can take on the form:  ***stevenuru/about/rotating-carousel***
+ For example a branch for a rotating photo carousel feature on an about page by Steven can take on the form:  ***stevenuru/about/rotating-carousel***
 
 ### Commits
 

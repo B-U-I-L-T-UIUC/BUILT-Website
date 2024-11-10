@@ -14,7 +14,7 @@ function Footer() {
                 <a href='https://www.instagram.com/built_uiuc/' target='_blank' rel='nooopener noreffer'>
                     <img src = '/instagram-svgrepo-com.svg' alt='instagram svg' />
                 </a>
-                <a href='https://www.linkedin.com/groups/14432013/' target='_blank' rel='nooopener noreffer'>
+                <a href='https://www.linkedin.com/in/built-uiuc/' target='_blank' rel='nooopener noreffer'>
                     <img src = '/linkedin-svgrepo-com.svg' alt='linkedin svg' />
                 </a>
             </div>

@@ -3,18 +3,7 @@ import { useState } from 'react';
 import { useEffect } from 'react';
 import "./PhotoCarousal.css"
 
-const PhotoCarousel = () => {
-  const imageSrcs = [
-    "Speed-Friending.png",
-    "coffee-social.png",
-    "coffee-soical-2.png",
-    "e-board.png",
-    "KlayvioTalk.png",
-    "OpenHouse-Food.png",
-    "OpenHouse2.JPEG",
-    "built-shirt.png",
-  ];
-
+const PhotoCarousel = ({ imageSrcs }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [fade, setFade] = useState(true);
 
@@ -39,6 +28,22 @@ const PhotoCarousel = () => {
     }, 500); // Half-second fade-out before dot click update
   };
 
+  const handleBackClick = () => {
+    setFade(false); // Trigger fade-out
+    setTimeout(() => {
+      setCurrentIndex((prevIndex) => (prevIndex - 1 + imageSrcs.length) % imageSrcs.length);
+      setFade(true); // Trigger fade-in after image change
+    }, 500);
+  };
+
+  const handleNextClick = () => {
+    setFade(false); // Trigger fade-out
+    setTimeout(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % imageSrcs.length);
+      setFade(true); // Trigger fade-in after image change
+    }, 500);
+  };
+
   return (
     <div>
       <div className="carousel-container">
@@ -48,14 +53,18 @@ const PhotoCarousel = () => {
           className={`carousel-image ${fade ? "fade-in" : "fade-out"}`}
         />
       </div>
-      <div className="carousel-dots">
-        {imageSrcs.map((_, index) => (
-          <span
-            key={index}
-            className={`dot ${currentIndex === index ? 'active' : ''}`}
-            onClick={() => handleDotClick(index)}
-          ></span>
-        ))}
+      <div className="carousel-controls">
+        <span className="carousel-arrow" onClick={handleBackClick}>&lt;</span>
+        <div className="carousel-dots">
+          {imageSrcs.map((_, index) => (
+            <span
+              key={index}
+              className={`dot ${currentIndex === index ? 'active' : ''}`}
+              onClick={() => handleDotClick(index)}
+            ></span>
+          ))}
+        </div>
+        <span className="carousel-arrow" onClick={handleNextClick}>&gt;</span>
       </div>
     </div>
   );

@@ -12,7 +12,6 @@ function AboutPage() {
                 <div className="hero-section">
                     <div className="hero-overlay">
                         <h1 className='merriweather'>About Us</h1>
-                        <p>Building a diverse and supportive community in computing fields.</p>
                         <a href="#mission" className="hero-button">Mission Statement</a>
                     </div>
                     <div className="scroll-indicator">&#x2193;</div>

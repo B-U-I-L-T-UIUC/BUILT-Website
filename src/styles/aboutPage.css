@@ -109,7 +109,7 @@ html {
 .value-header {
     font-size: 2rem;
     font-weight: bold;
-    color: var(--main-brown); /* Replaced with main-brown variable */
+    color: var(--main-brown);
     text-align: center;
     padding-bottom: 10px;
     margin-bottom: 20px;
@@ -119,10 +119,10 @@ html {
 .value-header::after {
     content: "";
     display: block;
-    width: 100px; /* Adjust width as desired */
+    width: 100px; 
     height: 4px;
     background: linear-gradient(to right, var(--gradient-start), var(--gradient-end)); 
-    margin: 8px auto 0; /* Centers underline */
+    margin: 8px auto 0; 
     border-radius: 2px;
 }
 
@@ -150,11 +150,10 @@ html {
 }
 
 .hero-overlay h1 {
-    margin: 0;
+    margin: 60px 0;
     font-size: 3rem; 
     font-weight: bold;
-    color: var(--main-brown); /* Replaced with main-brown variable */
-    margin: 20px 0; 
+    color: var(--main-brown);
     position: relative;
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
 }

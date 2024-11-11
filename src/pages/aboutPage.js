@@ -8,6 +8,8 @@ import ValueCard from '../components/valueCard.js';
 
 function AboutPage() {
     return (
+        <>
+        <StickyNavBar></StickyNavBar>
         <div className="AboutPage">
             <header className="AboutPage-header">
                 <div className="hero-section">
@@ -33,6 +35,8 @@ function AboutPage() {
             </header>
             <CardSlider/>
         </div>
+        </>
+
     );
 }
 

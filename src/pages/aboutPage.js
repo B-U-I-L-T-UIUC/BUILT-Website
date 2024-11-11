@@ -1,4 +1,5 @@
 import React from 'react';
+import StickyNavBar from '../components/stickyNavBar'
 import '../styles/aboutPage.css';
 import CardSlider from '../components/cardslider.js';
 import ValueCard from '../components/valueCard.js';

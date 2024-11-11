@@ -1,12 +1,12 @@
 import React from 'react';
+import StickyNavBar from '../components/stickyNavBar';
 import '../styles/homePage.css';
 
 function HomePage() {
     return (
-        <div className="HomePage">
-            <header className="HomePage-header">
-                <h1>Welcome to the home page!</h1>
-            </header>
+        <div className="Home-Page">
+            <StickyNavBar />
+            <h1>Welcome to the home page!</h1> 
         </div>
     );
 }

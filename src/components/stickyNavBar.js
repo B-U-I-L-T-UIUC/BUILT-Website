@@ -11,7 +11,7 @@ const StickyNavBar = () => {
           <Link to="/Home" className="button">Home</Link>
           <Link to="/About" className="button">About Us</Link>
           <Link to="/Calendar" className="button">Calendar</Link>
-          <Link to="/GetInvolvedPage" className="button">Get Involved</Link>
+          <Link to="/Get-Involved" className="button">Get Involved</Link>
         </div>
       </div>
     </>

@@ -1,7 +1,7 @@
 import React from 'react';
 import StickyNavBar from '../components/stickyNavBar';
 import '../styles/homePage.css';
-import PhotoCarousel from '../components/PhotoCarousal';
+import PhotoCarousel from '../components/photoCarousal';
 
 function HomePage() {
     const carouselImages = [

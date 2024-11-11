@@ -8,6 +8,41 @@ function HomePage() {
         <div className="Home-Page">
             <StickyNavBar />
             <h1>Welcome to the home page!</h1> 
+            <h1>Welcome to the home page!</h1> 
+            <h1>Welcome to the home page!</h1> 
+            <h1>Welcome to the home page!</h1> 
+            <h1>Welcome to the home page!</h1> 
+            <h1>Welcome to the home page!</h1> 
+            <h1>Welcome to the home page!</h1> 
+            <h1>Welcome to the home page!</h1> 
+            <h1>Welcome to the home page!</h1> 
+            <h1>Welcome to the home page!</h1> 
+            <h1>Welcome to the home page!</h1> 
+            <h1>Welcome to the home page!</h1> 
+            <h1>Welcome to the home page!</h1> 
+            <h1>Welcome to the home page!</h1> 
+            <h1>Welcome to the home page!</h1> 
+            <h1>Welcome to the home page!</h1> 
+            <h1>Welcome to the home page!</h1> 
+            <h1>Welcome to the home page!</h1> 
+            <h1>Welcome to the home page!</h1> 
+            <h1>Welcome to the home page!</h1> 
+            <h1>Welcome to the home page!</h1> 
+            <h1>Welcome to the home page!</h1> 
+            <h1>Welcome to the home page!</h1> 
+            <h1>Welcome to the home page!</h1> 
+            <h1>Welcome to the home page!</h1> 
+            <h1>Welcome to the home page!</h1> 
+            <h1>Welcome to the home page!</h1> 
+            <h1>Welcome to the home page!</h1> 
+            <h1>Welcome to the home page!</h1> 
+            <h1>Welcome to the home page!</h1> 
+            <h1>Welcome to the home page!</h1> 
+            <h1>Welcome to the home page!</h1> 
+            <h1>Welcome to the home page!</h1> 
+            <h1>Welcome to the home page!</h1> 
+            <h1>Welcome to the home page!</h1> 
+            <h1>Welcome to the home page!</h1> 
         </div>
     );
 }

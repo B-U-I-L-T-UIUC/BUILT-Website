@@ -1,34 +1,54 @@
+/* Default navbar state */
 .navbar-wrapper {
-  margin-top: 5px;
-  width: 100%; /* Full width of the viewport */
-  overflow-x: hidden; /* Prevent horizontal scrolling */
+  width: 100%;
+  overflow-x: hidden;
+  position: relative;
+  z-index: 1000;
+  transition: all 0.3s ease-out;
 }
 
-  .navbar {
-    position: sticky;
-    top: 0px; 
-    z-index: 1000;
-    display: flex;
-    justify-content: flex-end;
-    padding-right: 20px;
-    padding-top: 10px;
-    gap: 10px;
-    font-family: 'Inter', sans-serif;
-  }
+/* Fixed position on scroll */
+.navbar-wrapper.fixed-top {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+/* Transparent background on the Home page */
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 20px;
+  padding-top: 10px;
+  gap: 10px;
+  font-family: 'Inter', sans-serif;
+  background-color: transparent;
+  color: black;
+  transition: background-color 0.3s ease-out;
+}
+
+/* Background image for all pages except Home */
+.navbar-wrapper.background-image .navbar {
+  background-image: url("../../public/built-background.png");
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
 
 .button {
   background-color: #DB9066;
   border: none;
   color: black;
-  padding: 15px 32px; /* Keep the same size for the buttons */
+  padding: 15px 32px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
   border-radius: 50px;
   font-family: 'Inter', sans-serif;
-  white-space: nowrap; /* Prevent text wrapping inside the buttons */
-  box-sizing: border-box; /* Ensure padding is included in button width */
+  white-space: nowrap;
+  box-sizing: border-box;
 }
 
 .button:hover {

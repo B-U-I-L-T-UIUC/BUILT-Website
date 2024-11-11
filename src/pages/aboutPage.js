@@ -8,6 +8,26 @@ function AboutPage() {
             <StickyNavBar />
             <h1>About Us</h1>
             <p>Welcome to the about page!</p>
+            <h1>About Us</h1>
+            <p>Welcome to the about page!</p>            <h1>About Us</h1>
+            <p>Welcome to the about page!</p>            <h1>About Us</h1>
+            <p>Welcome to the about page!</p>            <h1>About Us</h1>
+            <p>Welcome to the about page!</p>            <h1>About Us</h1>
+            <p>Welcome to the about page!</p>            <h1>About Us</h1>
+            <p>Welcome to the about page!</p>            <h1>About Us</h1>
+            <p>Welcome to the about page!</p>            <h1>About Us</h1>
+            <p>Welcome to the about page!</p>            <h1>About Us</h1>
+            <p>Welcome to the about page!</p>            <h1>About Us</h1>
+            <p>Welcome to the about page!</p>            <h1>About Us</h1>
+            <p>Welcome to the about page!</p>            <h1>About Us</h1>
+            <p>Welcome to the about page!</p>            <h1>About Us</h1>
+            <p>Welcome to the about page!</p>            <h1>About Us</h1>
+            <p>Welcome to the about page!</p>            <h1>About Us</h1>
+            <p>Welcome to the about page!</p>            <h1>About Us</h1>
+            <p>Welcome to the about page!</p>            <h1>About Us</h1>
+            <p>Welcome to the about page!</p>            <h1>About Us</h1>
+            <p>Welcome to the about page!</p>            <h1>About Us</h1>
+            <p>Welcome to the about page!</p>
           
         </div>
     );

@@ -1,23 +1,28 @@
-import React from 'react';
-import { useState } from 'react';
-import { useEffect } from 'react';
-import "./PhotoCarousal.css"
+import React, { useState, useEffect, useRef } from 'react';
+import "../styles/PhotoCarousal.css"
 
 const PhotoCarousel = ({ imageSrcs }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [fade, setFade] = useState(true);
+  const intervalRef = useRef(null); // Ref to store the interval ID
 
-  useEffect(() => {
-    const interval = setInterval(() => {
+  const resetInterval = () => {
+    if (intervalRef.current) {
+      clearInterval(intervalRef.current);
+    }
+
+    intervalRef.current = setInterval(() => {
       setFade(false); // Start fade-out
-
       setTimeout(() => {
         setCurrentIndex((prevIndex) => (prevIndex + 1) % imageSrcs.length);
         setFade(true); // Start fade-in after image change
       }, 1000); // 1-second fade-out duration
     }, 5000); // Image changes every 5 seconds
+  };
 
-    return () => clearInterval(interval);
+  useEffect(() => {
+    resetInterval(); // Start interval when component mounts
+    return () => clearInterval(intervalRef.current); // Clear interval on unmount
   }, [imageSrcs.length]);
 
   const handleDotClick = (index) => {
@@ -25,6 +30,7 @@ const PhotoCarousel = ({ imageSrcs }) => {
     setTimeout(() => {
       setCurrentIndex(index);
       setFade(true); // Trigger fade-in after image change
+      resetInterval(); // Reset the interval after dot click
     }, 500); // Half-second fade-out before dot click update
   };
 
@@ -33,6 +39,7 @@ const PhotoCarousel = ({ imageSrcs }) => {
     setTimeout(() => {
       setCurrentIndex((prevIndex) => (prevIndex - 1 + imageSrcs.length) % imageSrcs.length);
       setFade(true); // Trigger fade-in after image change
+      resetInterval(); // Reset the interval after back click
     }, 500);
   };
 
@@ -41,6 +48,7 @@ const PhotoCarousel = ({ imageSrcs }) => {
     setTimeout(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % imageSrcs.length);
       setFade(true); // Trigger fade-in after image change
+      resetInterval(); // Reset the interval after next click
     }, 500);
   };
 

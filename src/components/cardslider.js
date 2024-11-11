@@ -132,5 +132,13 @@ const data = [
         email: "sk106@illinois.edu",
         description: "Hi, I am a third-year Ph.D. candidate in computer science studying decision-making under uncertainty. In my free time, I enjoy rock climbing, running, and cooking." 
     },
+    {
+        image:'/eboard-carolina.jpg',
+        title: "Marketing Director",
+        name: "Carolina Rosas",
+        pronouns: "she/her",
+        email: "cr46@illinois.edu",
+        description: "Hey! My name is Carolina Rosas, I am a junior studying Computer Science with a passion for public speaking and comedy! On campus, I am President of the Illini Speech and Debate Team and Marketing Director for B[U]ILT. In my free time I enjoy arts and crafts, karaoke, and going on walks! "
+    }
     
 ]

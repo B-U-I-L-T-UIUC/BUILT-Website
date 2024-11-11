@@ -1,5 +1,4 @@
 .valueCard {
-    width: 256px;
     background-color: #E8BDA3;
     display: flex;
     justify-content: center;
@@ -13,7 +12,7 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
     transition: transform 0.2s ease, box-shadow 0.2s ease; 
     flex: 1 1 30%; 
-    max-width: 250px; 
+    max-width: 280px; 
     margin: 10px;
 }
 

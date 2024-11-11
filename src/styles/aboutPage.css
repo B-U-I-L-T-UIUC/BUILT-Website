@@ -51,7 +51,7 @@ html {
     max-width: 900px; 
     margin: auto;
     margin-top: 5rem;
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
 }
 
 .mission h2 {
@@ -123,6 +123,7 @@ html {
     text-align: center;
     padding-bottom: 10px;
     margin-bottom: 20px;
+    margin-top: 20px;
     position: relative;
 }
 
@@ -183,21 +184,4 @@ html {
     background-color: var(--button-hover-bg);
 }
 
-.scroll-indicator {
-    font-size: 2em;
-    color: var(--main-brown);
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    animation: bounce 2s infinite;
-}
 
-@keyframes bounce {
-    0%, 100% {
-        transform: translate(-50%, 0);
-    }
-    50% {
-        transform: translate(-50%, 10px);
-    }
-}

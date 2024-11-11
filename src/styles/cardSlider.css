@@ -4,6 +4,8 @@
     --swiper-navigation-sides-offset: 10px;
     --swiper-navigation-color: #51210D;
     --swiper-pagination-color: #51210D;
+    --swiper-pagination-bullet-size: 8px;
+    --swiper-pagination-bottom: 1px;
 }
 
 .AboutPage {

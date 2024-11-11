@@ -17,7 +17,7 @@ function AboutPage() {
                         <h1 className='merriweather'>About Us</h1>
                         <a href="#mission" className="hero-button">Mission Statement</a>
                     </div>
-                    <div className="scroll-indicator">&#x2193;</div>
+                    
                 </div>
                 <section className='mission' id='mission'>
                     <h2 className='brown merriweather' >Mission Statement</h2>

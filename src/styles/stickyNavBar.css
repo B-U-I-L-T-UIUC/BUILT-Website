@@ -18,7 +18,8 @@
   display: flex;
   justify-content: flex-end;
   padding-right: 20px;
-  padding-top: 10px;
+  padding-top: 10px; /* Increase padding at the top */
+  padding-bottom: 10px; /* Add padding at the bottom */
   gap: 10px;
   font-family: 'Inter', sans-serif;
   background-image: url("../../public/built-background.png");
@@ -34,7 +35,9 @@
   background-color: #DB9066;
   border: none;
   color: black;
-  padding: 15px 32px;
+  padding: 10px 20px;
+  font-size: 14px; 
+  border-radius: 30px; 
   text-align: center;
   text-decoration: none;
   display: inline-block;

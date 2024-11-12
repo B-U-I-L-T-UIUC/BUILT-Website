@@ -1,8 +1,0 @@
-/* This will make your StickyNavBar sticky with a transparent background */
-.sticky-header {
-    position: sticky;
-    top: 0;
-    width: 100%;
-    background-color: rgba(255, 255, 255, 0); /* Adjust transparency here */
-    z-index: 1000; /* Ensures it stays on top of other content */
-}

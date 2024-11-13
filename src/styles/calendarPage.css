@@ -1,9 +1,52 @@
 /* Styles for the calendar page */
 
-.Calendar-Page {
-    background-color: #FFE7D7;
-    display: flex;
-    flex-direction: column;
-    flex:1;
-    width: 100%;
+h1{
+  color: #4f180b;
 }
+.Calendar-Page {
+  background-color: #FFE7D7;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+  flex: 1
+
+} /*is the - why it's needed for the classname? background stays*/
+/* Override the default styles for the calendar's header */
+.rbc-header {
+    background-color:#d84e13; /* Dark background for header #333*/
+    color: black;            /* White text for header */
+ }
+  /*rgb(164, 76, 17)*/
+  /* Change the background color of the calendar itself */
+  /*rgba(184, 27, 27, 0.936)*/
+.rbc-calendar {
+  background-color: rgb(254, 196, 148); /* Light gray background #f4f4f9*/
+  border-radius: 4px;        /*8 Rounded corners //#eac262*/
+  border: 3px solid rgb(117, 19, 153);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Shadow around the calendar */
+  flex: 1;
+  width: 50%;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  margin-left: 20vh;
+  margin-right: 20vh; 
+}
+  
+  /* Modify the cells in the calendar grid */
+.rbc-day-bg {
+    background-color: rgb(187, 228, 232);  /* #f9f9f9Light background for day cells */
+    border: 1px solid rgb(149, 2, 2);     /* Add a light border #ddd*/
+}
+  
+  /* Change the color of events */
+.rbc-event {
+    background-color: #007bff; /* Blue background for events */
+    color: white;              /* White text for events */
+}
+  
+  /* Customize event hover effects */
+.rbc-event:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+  

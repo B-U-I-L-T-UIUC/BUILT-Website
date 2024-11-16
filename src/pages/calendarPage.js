@@ -20,14 +20,15 @@ class CalendarPage extends Component {
 
   render() {
     return (
-      <div className="Calendar-Page">
+      <div className = "Calendar-Page">
         <StickyNavBar />
         <h1>Calendar</h1>
         <Calendar
           localizer={localizer}
-          defaultDate={new Date()}
-          defaultView="month"
-          events={this.state.events}
+          defaultDate ={new Date()}
+          defaultView ="month"
+          events ={this.state.events}
+          
         /> 
       </div> 
     );

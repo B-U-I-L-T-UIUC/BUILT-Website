@@ -1,54 +1,19 @@
 /* Styles for the calendar page */
-h1{color: #4f180b;}
-/* Override the default styles for the calendar's header */
-.rbc-header {
-  background-color:#d84e13;
-  color: black;
-} 
+
 .Calendar-Page {
   background-color: #FFE7D7;
   display: flex;
   flex-direction: column;
   text-align: center;
   flex: 1;
-} 
-.rbc-calendar {
-  background-color: rgb(254, 196, 148); 
-  border-radius: 4px;
-  border: 3px solid rgb(117, 19, 153);
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Shadow around the calendar */
-  flex: 1;
-  margin-bottom: 2vh;
-  margin-left: 20vh;
-  margin-right: 20vh; 
 }
-
-/* Modify the cells in the calendar grid */
-.rbc-day-bg {
-  background-color: rgb(187, 228, 232);
-  border: 1px solid rgb(149, 2, 2);
-}
-/* Change the color of events */
-.rbc-event {
-  background-color: #007bff;
-  color: white;
-}
-/* Customize event hover effects */
-.rbc-event:hover {
-  background-color: #0056b3;
-}
-.rbc-btn-group {
+h1{color: #4f180b;}
+/*NOTE: there's been some new updates to embedded Google cal and most likely
+the feature that used to allow changing the top color of the calendar 
+no longer exists and we can only change event colors to customzie*/
+.googleCal{
   display: flex;
-  justify-content: space-between;
-  padding: 10px 0;
+  justify-content: center; /* Center horizontally */
+  align-items: center;     /* Center vertically */
+  flex: 1;
 }
-/* colors and other styling haven't worked on these 
-.rbc-btn {
-  border: none;
-  padding: 5px 15px;
-  cursor: pointer;
-  font-size: 14px;
-}
-.rbc-btn:hover {
-  background-color: #00b345;
-}*/

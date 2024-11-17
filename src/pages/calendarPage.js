@@ -1,34 +1,24 @@
 import React, { Component } from 'react';
 import StickyNavBar from '../components/stickyNavBar';
 import '../styles/calendarPage.css';
-import { Calendar, momentLocalizer } from "react-big-calendar";
-import moment from "moment";
-import "react-big-calendar/lib/css/react-big-calendar.css"; //after installing dependencies
-
-const localizer = momentLocalizer(moment);
 class CalendarPage extends Component {
-  state = {
-    events: [
-      {
-        start: moment().toDate(),
-        end: moment().add(1, "days").toDate(),
-        title: "name goes here"
-      }
-    ]
-  };
-
   render() {
     return (
       <div className = "Calendar-Page">
-        <StickyNavBar />
-        <h1>Calendar</h1>
-        <Calendar
-          localizer={localizer}
-          defaultDate ={new Date()}
-          defaultView ="month"
-          events ={this.state.events}
-        /> 
-      </div> 
+        <div className="upper">
+          <StickyNavBar />
+          <h1>Calendar</h1>
+        </div>
+ 
+        <div className="googleCal"> 
+          <iframe
+          src ="https://calendar.google.com/calendar/embed?height=800&wkst=1&ctz=America%2FChicago&showPrint=0&title=B%5BU%5DILT%20Calendar&src=YnVpbHR1aXVjQGdtYWlsLmNvbQ&src=YTNhZDk1NGU4OWRlMmNiZWVjMGJlMWY3YThiMWFhN2NmYmIyOTc1M2UzYmZiZDk3OGEyMTgxOTY4ODQ2YmQwYkBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%238E24AA&color=%23D81B60"
+          style = {{border: 'solid 3px #9C27B0', borderRadius: '7px'}}
+          width ="900" height="750"
+          title = "BUILT google calendar"
+          ></iframe>
+        </div> 
+      </div>  
     );
   }
 }

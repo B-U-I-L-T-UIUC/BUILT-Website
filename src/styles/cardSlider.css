@@ -18,7 +18,9 @@
     padding-left: 2rem;
     padding-top: 1rem;
 }
-
+.cards *{
+    margin-bottom: 8px;
+}
 .wrapper {
     display: flex;
     justify-content: center;

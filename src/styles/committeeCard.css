@@ -5,7 +5,6 @@
     border-radius: 15px;
     margin-top: 1%;
     margin-bottom: 1%;
-    padding: 20px; /* Add padding for spacing */
     display: flex; /* Flexbox for centering content */
     flex-direction: column; /* Stacks horizontal-stack vertically */
     align-items: center; /* Vertically center horizontal-stack */
@@ -22,7 +21,7 @@
 .vertical-stack {
     margin-top: 2%;
     margin-bottom: 2%;
-    margin-left: 5%;
+    margin-left: 10%;
     margin-right: 5%;
     display: flex;
     flex-direction: column;

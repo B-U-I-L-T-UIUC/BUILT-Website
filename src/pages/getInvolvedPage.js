@@ -59,7 +59,7 @@ function GetInvolvedPage() {
           meeting="Meeting times vary"
           channel="social-committee"
         ></CommitteeCard>
-                <CommitteeCard
+        <CommitteeCard
           name="Outreach"
           lead="Alexis Serrano"
           netid="aserr3"

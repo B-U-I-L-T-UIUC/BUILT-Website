@@ -18,7 +18,7 @@ const CommitteeCard = ({
         </div>
         <div className="vertical-stack">
           <p className="description">{description}</p>
-          <p className="channel">Checkout #{channel} in our slack!</p>
+          <p className="channel">Check out #{channel} in our slack!</p>
           <h5 className="meeting">{meeting}</h5>
         </div>
       </div>

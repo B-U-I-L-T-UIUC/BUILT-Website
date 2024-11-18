@@ -63,7 +63,7 @@ function GetInvolvedPage() {
           name="Outreach"
           lead="Alexis Serrano"
           netid="aserr3"
-          description="Help B[U]ILT obtain and maintain partnership opportunities with sponsors!"
+          description="Engage with high schools to inspire future B[U]ILT members to study at UIUC!"
           meeting="Meeting times TBA"
           channel="outreach-committee coming soon"
         ></CommitteeCard>

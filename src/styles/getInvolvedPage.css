@@ -47,3 +47,21 @@
     padding-left: 15%;
     padding-right: 15%;
 }
+
+.light-orange-card {
+    border-radius: 15px;
+    background-color:#F7D1BC;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    margin-bottom: 1%
+}
+
+.committee-header {
+    color: #62250C;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}

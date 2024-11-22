@@ -1,6 +1,7 @@
+/*styles for the googleCal part of the page*/
 .googleCal{
     display: flex;
     justify-content: center; /* Center horizontally */
     align-items: center; /* Center vertically */
-    flex:1; 
+    flex:1;
 }

@@ -8,3 +8,48 @@
     width: 100%;
 }
 h1{color: #4f180b;}
+.rbc-header {
+    background-color:#d84e13;
+    color: black;
+} 
+
+.rbc-calendar {
+    background-color: rgb(254, 196, 148); 
+    border-radius: 4px;
+    border: 3px solid rgb(117, 19, 153);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Shadow around the calendar */
+    flex: 1;
+    margin-bottom: 2vh;
+    margin-left: 20vh;
+    margin-right: 20vh; 
+  }
+  
+  /* Modify the cells in the calendar grid */
+  .rbc-day-bg {
+    background-color: rgb(187, 228, 232);
+    border: 1px solid rgb(149, 2, 2);
+  }
+  /* Change the color of events */
+  .rbc-event {
+    background-color: #007bff;
+    color: white;
+  }
+  /* Customize event hover effects */
+  .rbc-event:hover {
+    background-color: #0056b3;
+  }
+  .rbc-btn-group {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+  }
+  /* colors and other styling haven't worked on these 
+  .rbc-btn {
+    border: none;
+    padding: 5px 15px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  .rbc-btn:hover {
+    background-color: #00b345;
+  }*/

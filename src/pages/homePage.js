@@ -2,6 +2,8 @@ import React from 'react';
 import StickyNavBar from '../components/stickyNavBar';
 import '../styles/homePage.css';
 import PhotoCarousel from '../components/photoCarousel';
+import MemberCard from '../components/memberCard';
+import WelcomeCard from '../components/welcomeCard';
 
 function HomePage() {
     const carouselImages = [
@@ -18,8 +20,28 @@ function HomePage() {
     return (
         <div className="Home-Page">
             <StickyNavBar />
-            <h1>Welcome to the home page!</h1> 
-            <PhotoCarousel imageSrcs={carouselImages}/>
+            <img
+                src="built-logo.png"
+                className='home-logo'
+            />
+            <div className='welcome-elements'>
+                <WelcomeCard className="welcome-card"/>
+                <PhotoCarousel imageSrcs={carouselImages} className="photo-carousel"/>
+            </div>
+            
+            {/* <h1 className='home-text'> Members Of The Month!</h1>
+            <div className='month-members'>
+                <MemberCard
+                    name="First Last"
+                    imageSrc="coffee-social.png"
+                    description="Lorem ipsum odor amet, consectetuer adipiscing elit. Dapibus elementum in consectetur auctor lacus. Curae sagittis dictum bibendum posuere interdum integer parturient mattis quam. Rutrum montes mi mollis elit lacus amet arcu. Fames torquent diam neque porta praesent est luctus."
+                />
+                <MemberCard
+                    name="First Last"
+                    imageSrc="coffee-social.png"
+                    description="Lorem ipsum odor amet, consectetuer adipiscing elit. Dapibus elementum in consectetur auctor lacus. Curae sagittis dictum bibendum posuere interdum integer parturient mattis quam. Rutrum montes mi mollis elit lacus amet arcu. Fames torquent diam neque porta praesent est luctus."
+                />
+            </div> */}
         </div>
     );
 }

@@ -1,4 +1,10 @@
 /* Styles for home page */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: #51210D;
+}
 
 .Home-Page {
     background-image: url("../../public/built-background.png");
@@ -8,4 +14,46 @@
     background-position: center;
     flex:1;
     width: 100%;
+}
+
+.month-members {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-inline: 5%;
+    margin-block: 2.5%;
+    /* padding-block: 5%; */
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .month-members {
+      flex-direction: column; /* Switch to vertical on small screens */
+    }
+    .welcome-elements {
+        flex-direction: column; /* Switch to vertical on small screens */
+      }
+  }
+
+.home-text {
+    font-family: ' Bold', Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #51210D;
+}
+
+.home-logo {
+    width: 225px;
+    height: auto;
+    border-radius: 50%;
+    margin-left: 10%;
+    /* box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05), 0 15px 40px rgba(0,0,0,0.2); */
+}
+
+.welcome-elements {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-inline: 2%;
+    margin-bottom: 10%;
+    align-items: center;
 }

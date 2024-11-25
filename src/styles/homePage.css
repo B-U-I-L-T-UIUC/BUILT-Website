@@ -54,6 +54,6 @@ body {
     flex-direction: row;
     justify-content: space-evenly;
     padding-inline: 2%;
-    margin-bottom: 10%;
+    /* margin-bottom: 10%; */
     align-items: center;
 }

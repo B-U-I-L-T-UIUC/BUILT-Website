@@ -83,6 +83,14 @@ const data = [
 
     },
     {
+        image:'/eboard-xochi.png',
+        title: "Secretary",
+        name: "Xochitl Zapata",
+        pronouns: "she/her",
+        email: "xzapata2@illinois.edu",
+        description: "Hi my name is Xochi Zapata, I study Brain and Cognitive Science and minoring in Computer Science. I’m from Blue Island, IL.  Some of my interests are philosophy, music and art!"
+    },
+    {
         image: '/eboard-libby.png',
         title: "Internal Director",
         name: "Libby Codamon",
@@ -139,12 +147,5 @@ const data = [
         email: "cr46@illinois.edu",
         description: "Hey! My name is Carolina Rosas, I am a junior studying Computer Science with a passion for public speaking and comedy! On campus, I am President of the Illini Speech and Debate Team and Marketing Director for B[U]ILT. In my free time I enjoy arts and crafts, karaoke, and going on walks! "
     },
-    {
-        image:'/eboard-xochi.png',
-        title: "Secretary",
-        name: "Xochitl Zapata",
-        pronouns: "she/her",
-        email: "xzapata2@illinois.edu",
-        description: "Hi my name is Xochi Zapata, I study Brain and Cognitive Science and minoring in Computer Science. I’m from Blue Island, IL.  Some of my interests are philosophy, music and art!"
-    }
+    
 ]

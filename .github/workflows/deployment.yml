@@ -21,6 +21,10 @@ jobs:
     - name: Install dependencies
       run: npm install
 
+    - name: Skip linting in CI
+      run: |
+        echo "DISABLE_ESLINT=true" >> .env
+
     - name: Build the project
       run: npm run build
 

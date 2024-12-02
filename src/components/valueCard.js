@@ -5,7 +5,7 @@ function ValueCard(props) {
     return (
         <div className='valueCard'>
             <section className='valueImage'>
-                <img className='valueCardImage' src={props.url} />
+                <img className='valueCardImage' src={props.url} alt = ""/>
             </section>
             <section className='valueText'>
                 <h3 className='merriweather'>{props.value}</h3>

@@ -23,7 +23,7 @@ const PhotoCarousel = ({ imageSrcs }) => {
   useEffect(() => {
     resetInterval(); // Start interval when component mounts
     return () => clearInterval(intervalRef.current); // Clear interval on unmount
-  }, [imageSrcs.length]);
+  }, [imageSrcs.length, resetInterval]);
 
   const handleDotClick = (index) => {
     setFade(false); // Trigger fade-out

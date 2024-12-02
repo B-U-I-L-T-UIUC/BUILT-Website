@@ -66,7 +66,7 @@ const data = [
         description: "Lorem ipsum..."
     },
     {
-        image: '/eboard-melissa.png',
+        image: 'eboard-melissa.png',
         title: "Vice President",
         name: "Melissa Aninagyei-Bonsu",
         pronouns: "she/her",
@@ -74,7 +74,7 @@ const data = [
         description: "Hey I'm Melissa. I'm a Junior studying Computer Science and minoring in Statistics! I am a CS STAR - CS Research Ambassador, and an Undergraduate Research Assistant! My hobbies include running track, watching Tiktok, and doing my hair, makeup, and nails! Catch me in the office on the daily!"
     },
     {
-        image: '/eboard-adrian.png',
+        image: 'eboard-adrian.png',
         title: "Treasurer",
         name: "Adrian Lara",
         pronouns: "he/him",
@@ -83,7 +83,7 @@ const data = [
 
     },
     {
-        image:'/eboard-xochi.png',
+        image:'eboard-xochi.png',
         title: "Secretary",
         name: "Xochitl Zapata",
         pronouns: "she/her",
@@ -91,7 +91,7 @@ const data = [
         description: "Hi my name is Xochi Zapata, I study Brain and Cognitive Science and minoring in Computer Science. I’m from Blue Island, IL.  Some of my interests are philosophy, music and art!"
     },
     {
-        image: '/eboard-libby.png',
+        image: 'eboard-libby.png',
         title: "Internal Director",
         name: "Libby Codamon",
         pronouns: "she/her",
@@ -100,7 +100,7 @@ const data = [
 
     },
     {
-        image: '/eboard-adela.png',
+        image: 'eboard-adela.png',
         title: "Social Director",
         name: "Adela Bautista Martinez",
         pronouns: "she/her",
@@ -108,7 +108,7 @@ const data = [
         description: "Hi!! My name is Adela, I’m a second year cs + phil and psychology major from Evanston, IL. I’m excited to continue to build and grow our built community. In my free time I like traveling, eating, and watching tv. Feel free to reach out for anything!"
     },
     {
-        image: '/eboard-alejandro.png',
+        image: 'eboard-alejandro.png',
         title: "External Director",
         name: "Alejandro Chavez",
         pronouns: "he/him",
@@ -124,7 +124,7 @@ const data = [
         description: "Hi my name is Bolden! I am a third year CS major with a minor in statistics, from Flossmoor, IL. As this year's infrastructure director I am excited to lead technical projects advancing our members' technical skills. In my free time I like to go to the gym, play volleyball, and watch anime."
     },
     {
-        image: '/eboard-alexis.jpg',
+        image: 'eboard-alexis.jpg',
         title: "Outreach Director",
         name: "Alexis Serrano",
         pronouns: "he/him",
@@ -132,7 +132,7 @@ const data = [
         description: "Hi, my name is Alexis Serrano, and I’m a fourth year Undergraduate student studying Computer Science. I’m from Berwyn, Illinois and really enjoy playing Tennis (and pickleball), listening to music, and running. As part of B[U]ILT, I’m the Outreach Director, and I look forward to expanding our CS community and helping students explore CS@UIUC. "
     },
     {
-        image: '/eboard-simon.png',
+        image: 'eboard-simon.png',
         title: "Graduate Affairs Director",
         name: "Simon Kato",
         pronouns: "he/him",
@@ -140,7 +140,7 @@ const data = [
         description: "Hi, I am a third-year Ph.D. candidate in computer science studying decision-making under uncertainty. In my free time, I enjoy rock climbing, running, and cooking." 
     },
     {
-        image:'/eboard-carolina.jpg',
+        image:'eboard-carolina.jpg',
         title: "Marketing Director",
         name: "Carolina Rosas",
         pronouns: "she/her",

@@ -1,34 +1,56 @@
+
 .navbar-wrapper {
-    margin-top: 5px; 
-  }
+  width: 100%;
+  overflow-x: hidden;
+  position: relative;
+  z-index: 1000;
+  transition: all 0.3s ease-out;
+}
 
-  .navbar {
-    position: sticky;
-    top: 0px; 
-    z-index: 1000;
-    display: flex;
-    justify-content: flex-end;
-    padding-right: 20px;
-    padding-top: 10px;
-    gap: 10px;
-    font-family: 'Inter', sans-serif;
-  }
+.navbar-wrapper.fixed-top {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
 
-  .button {
-    background-color: #DB9066;
-    border: none;
-    color: black;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    border-radius: 50px;
-    font-family: 'Inter', sans-serif;
-  }
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-top: 10px; /* Increase padding at the top */
+  padding-bottom: 10px; /* Add padding at the bottom */
+  gap: 10px;
+  font-family: 'Inter', sans-serif;
+  background-image: url("../../public/built-background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  color: black;
+  width: 100%;
+}
 
-  .button:hover {
-    color: #000000;
-    background-color: rgb(243, 221, 205);
-  }
-  
+.button {
+  background-color: #DB9066;
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  padding: 10px 20px;
+  font-size: 14px; 
+  border-radius: 30px; 
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 50px;
+  font-family: 'Inter', sans-serif;
+  white-space: nowrap;
+  box-sizing: border-box;
+}
+
+.button:hover {
+  color: #000000;
+  background-color: rgb(243, 221, 205);
+}

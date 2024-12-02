@@ -92,6 +92,9 @@ html {
         align-items: center;
         gap: 15px;
     }
+    .mission {
+        max-width: 90%;
+    }
 }
 
 .about-us-header {

@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef, useCallback } from 'react';
 import "../styles/photoCarousal.css"
 
 const PhotoCarousel = ({ imageSrcs }) => {
@@ -6,7 +6,7 @@ const PhotoCarousel = ({ imageSrcs }) => {
   const [fade, setFade] = useState(true);
   const intervalRef = useRef(null); // Ref to store the interval ID
 
-  const resetInterval = () => {
+  const resetInterval = useCallback(() => {
     if (intervalRef.current) {
       clearInterval(intervalRef.current);
     }
@@ -18,7 +18,7 @@ const PhotoCarousel = ({ imageSrcs }) => {
         setFade(true); // Start fade-in after image change
       }, 1000); // 1-second fade-out duration
     }, 5000); // Image changes every 5 seconds
-  };
+  }, [imageSrcs.length]);
 
   useEffect(() => {
     resetInterval(); // Start interval when component mounts

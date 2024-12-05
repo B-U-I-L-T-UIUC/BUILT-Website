@@ -63,7 +63,7 @@ const data = [
         name: "Elisa Carillo",
         pronouns: "she/her",
         email: "email@illinois.edu",
-        description: "Lorem ipsum..."
+        description: "Hi! I am Elisa Carrillo, a Senior majoring in Computer Science. I grew up in Brooklyn, and lived in San Diego, Sunnyvale, and Los Angeles during summer internships. Currently I develop for the Theorielearn group and serve as an MEP Peer Mentor. B[U]ILT’s growth has been inspiring, and I am grateful for the opportunity to be a leader and contribute to its success. In my free time, I love to watch Reality T.V., spend time with my family, run/hike, and do arts and crafts."
     },
     {
         image: 'eboard-melissa.png',
@@ -79,7 +79,7 @@ const data = [
         name: "Adrian Lara",
         pronouns: "he/him",
         email: "ajlara279@gmail.com",
-        description: "Placeholder"
+        description: "Hello! My name is Adrian Lara, and I am a junior majoring in Computer Science with a minor in the Hoeft Technology & Management Program. I am a current CS 128 Course Assistant, so you might catch me during office hours. "
 
     },
     {

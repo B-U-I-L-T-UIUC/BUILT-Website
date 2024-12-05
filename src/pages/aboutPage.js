@@ -63,7 +63,7 @@ const data = [
         name: "Elisa Carillo",
         pronouns: "she/her",
         email: "email@illinois.edu",
-        description: "Hi! I am Elisa Carrillo, a Senior majoring in Computer Science. I grew up in Brooklyn, and lived in San Diego, Sunnyvale, and Los Angeles during summer internships. Currently I develop for the Theorielearn group and serve as an MEP Peer Mentor. B[U]ILT’s growth has been inspiring, and I am grateful for the opportunity to be a leader and contribute to its success. In my free time, I love to watch Reality T.V., spend time with my family, run/hike, and do arts and crafts."
+        description: "Hi! I am Elisa Carrillo, a Senior majoring in Computer Science. I grew up in Brooklyn and spent summers interning in San Diego, Sunnyvale, and Los Angeles. Currently, I develop for the Theorielearn group and serve as an MEP Peer Mentor. B[U]ILT’s growth has been inspiring, and I am grateful for the opportunity to be a leader and contribute to its success. In my free time, I love to watch Reality T.V., spend time with my family, run/hike, and do arts and crafts."
     },
     {
         image: 'eboard-melissa.png',

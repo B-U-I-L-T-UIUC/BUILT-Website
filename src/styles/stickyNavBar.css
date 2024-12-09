@@ -3,7 +3,7 @@
   overflow-x: hidden;
   position: relative;
   z-index: 1000;
-  transition: all 0.3s ease-out;
+  transition: background-color 0.1s ease-out; /* Quick transition for visual changes */
 }
 
 .navbar-wrapper.fixed-top {
@@ -68,7 +68,7 @@
 .hamburger-menu .line {
   width: 30px;
   height: 3px;
-  background-color: #DB9066;
+  background-color: #62250C;
   border-radius: 2px;
 }
 
@@ -85,10 +85,10 @@
   top: 0;
   right: 0; 
   background-color: rgba(243, 221, 205, 0.9);
-  width: 75%;
+  width: 50%;
   height: 100%;
-  padding: 20px;
-  z-index: 1000;
+  padding: 10%;
+  z-index: 1101;
   transform: translateX(100%); 
   animation: slide-in-right 0.3s forwards;
 }
@@ -120,4 +120,15 @@
     display: inline-block; 
   }
 }
+
+
+@media (min-width: 501px) {
+  .nav-links {
+      display: flex !important;
+  }
+  .hamburger-menu {
+      display: none;
+  }
+}
+
 

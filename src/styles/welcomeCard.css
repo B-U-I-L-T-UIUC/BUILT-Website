@@ -1,0 +1,60 @@
+/* WelcomeCard styles */
+.welcome-card {
+    width: 40%;
+    padding: 2rem;
+    background-color: #F7D1BCCC;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05), 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+.welcome-text {
+    font-weight: bolder;
+    font-size: 48px;
+    text-align: left;
+    color: #51210D;
+    margin-bottom: 2%;
+}
+
+.welcome-desc {
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    text-align: left;
+    color: #51210D;
+    margin-bottom: 2%;
+}
+
+.icons {
+    padding: 20px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto; 
+}
+
+.icons img {
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.icons img:hover {
+    transform: scale(1.1);
+}
+
+/* Media Queries */
+@media (max-width: 1130px) {
+    .welcome-card {
+        width: 90%;
+    }
+
+    .welcome-text {
+        font-size: 32px;
+    }
+
+    .welcome-desc {
+        font-size: 18px;
+    }
+}

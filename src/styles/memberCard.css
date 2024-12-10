@@ -38,3 +38,16 @@ body {
         border-radius: 15px;
         object-fit: contain;
     }
+
+    /* Media Query for small screens (phones) */
+@media (max-width: 530px) {
+    .member-card {
+        width: 380px;
+    }
+}
+
+@media (max-width: 400px) {
+    .member-card {
+        width: 340px;
+    }
+}

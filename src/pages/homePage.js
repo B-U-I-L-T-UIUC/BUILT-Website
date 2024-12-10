@@ -7,7 +7,7 @@ import WelcomeCard from '../components/welcomeCard';
 
 function HomePage() {
     const carouselImages = [
-        "Speed-Friending.png",
+        "public/Speed-Friending.png",
         "coffee-social.png",
         "coffee-soical-2.png",
         "e-board.png",
@@ -17,13 +17,16 @@ function HomePage() {
         "built-shirt.png",
     ];
 
-    return (
+    return (    
         <div className="Home-Page">
             <StickyNavBar />
-            <img
-                src="built-logo.png"
-                className='home-logo'
-            />
+            <div className='logo-row'>
+                <img
+                    src="built-logo.png"
+                    className='home-logo'
+                    alt=''
+                />
+            </div>
             <div className='welcome-elements'>
                 <WelcomeCard className="welcome-card"/>
                 <PhotoCarousel imageSrcs={carouselImages} className="photo-carousel"/>

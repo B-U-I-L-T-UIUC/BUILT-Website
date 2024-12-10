@@ -1,6 +1,4 @@
-/* Styles for home page */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
-
+/* HomePage styles */
 body {
     font-family: 'Inter', sans-serif;
     color: #51210D;
@@ -12,48 +10,117 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
-    flex:1;
     width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo-row {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align children to the left */
+    justify-content: flex-start; /* Align children at the top */
+}
+
+.home-logo {
+    width: 15%;
+    height: auto;
+    border-radius: 50%;
+    margin-left: 4rem;
+
+}
+
+.home-text {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #51210D;
 }
 
 .month-members {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    padding-inline: 5%;
-    margin-block: 2.5%;
-    /* padding-block: 5%; */
-    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    padding: 0 5%;
+    margin: 2rem 0;
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+    .month-members {
+        gap: 1.5rem;
+    }
+
+    .welcome-card,
+    .photo-carousel {
+        max-width: 90%; /* Make each component fill most of the screen */
+    }
 }
 
 @media (max-width: 768px) {
-    .month-members {
-      flex-direction: column; /* Switch to vertical on small screens */
+    .home-logo {
+        width: 20%;
     }
-    .welcome-elements {
-        flex-direction: column; /* Switch to vertical on small screens */
-      }
-  }
 
-.home-text {
-    font-family: ' Bold', Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    color: #51210D;
-}
-
-.home-logo {
-    width: 225px;
-    height: auto;
-    border-radius: 50%;
-    margin-left: 10%;
-    /* box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05), 0 15px 40px rgba(0,0,0,0.2); */
+    .home-text {
+        font-size: 1.75rem;
+    }
 }
 
 .welcome-elements {
     display: flex;
-    flex-direction: row;
+    flex-direction: row; /* Default: side-by-side */
     justify-content: space-evenly;
-    padding-inline: 2%;
-    /* margin-bottom: 10%; */
     align-items: center;
+    gap: 3rem; /* Space between WelcomeCard and PhotoCarousel */
+    margin-bottom: 2rem;
+    padding: 2rem;
+    width: 100%;
 }
+
+/* Adjust the size of each component */
+.welcome-card {
+    flex: 1; /* Take equal space in the flex container */
+    max-width: 90%; /* Prevent WelcomeCard from getting too wide */
+}
+
+.photo-carousel {
+    flex: 1;
+    max-width: 90%; /* Prevent PhotoCarousel from getting too wide */
+}
+
+/* Media Query for small screens (phones) */
+@media (max-width: 1130px) {
+    .welcome-elements {
+        flex-direction: column; /* Stack WelcomeCard and PhotoCarousel vertically */
+        align-items: center;
+    }
+    .logo-row {
+        align-items: center; /* Align children to the left */
+        flex-direction: center;
+    }
+    .home-logo {
+        margin-left: 0rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .home-logo {
+        width: 30%;
+    }
+
+    .home-text {
+        font-size: 1.5rem;
+    }
+
+    .welcome-elements {
+        padding: 1rem;
+    }
+}
+

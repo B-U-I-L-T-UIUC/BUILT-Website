@@ -10,6 +10,7 @@ function MemberCard({name, imageSrc, description}) {
                 <img
                     src={imageSrc}
                     className='member-image'
+                    alt='member image'
                 />     
             <div className='member-text-box'>
                 <div className='member-text'>

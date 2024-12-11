@@ -2,7 +2,7 @@ import React from 'react';
 import StickyNavBar from '../components/stickyNavBar';
 import '../styles/homePage.css';
 import PhotoCarousel from '../components/photoCarousel';
-import MemberCard from '../components/memberCard';
+//import MemberCard from '../components/memberCard';
 import WelcomeCard from '../components/welcomeCard';
 
 function HomePage() {

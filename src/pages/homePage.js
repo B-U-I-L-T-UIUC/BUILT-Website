@@ -7,7 +7,7 @@ import WelcomeCard from '../components/welcomeCard';
 
 function HomePage() {
     const carouselImages = [
-        "public/Speed-Friending.png",
+        "Speed-Friending.png",
         "coffee-social.png",
         "coffee-soical-2.png",
         "e-board.png",

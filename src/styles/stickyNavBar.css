@@ -35,16 +35,19 @@
   border: none;
   color: black;
   padding: 10px 20px;
-  font-size: 14px; 
-  border-radius: 30px; 
+  font-size: 14px;
+  border-radius: 30px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
   border-radius: 50px;
   font-family: 'Inter', sans-serif;
-  white-space: nowrap;
+  white-space: wrap;
   box-sizing: border-box;
+  width: auto; 
+  min-width: 120px;
+  max-width: 200px;
 }
 
 .button:hover {
@@ -59,8 +62,8 @@
   background: none;
   border: none;
   cursor: pointer;
-  z-index: 1100;
-  position: absolute;
+  z-index: 1200;
+  position: fixed;
   top: 20px;
   right: 20px; 
 }
@@ -87,7 +90,7 @@
   background-color: rgba(243, 221, 205, 0.9);
   width: 50%;
   height: 100%;
-  padding: 10%;
+  padding: 15% 5%;
   z-index: 1101;
   transform: translateX(100%); 
   animation: slide-in-right 0.3s forwards;
@@ -99,7 +102,7 @@
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .hamburger-menu {
     display: flex; 
   }
@@ -122,7 +125,7 @@
 }
 
 
-@media (min-width: 501px) {
+@media (min-width: 601px) {
   .nav-links {
       display: flex !important;
   }

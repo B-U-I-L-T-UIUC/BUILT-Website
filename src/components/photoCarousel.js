@@ -1,10 +1,11 @@
 import React, { useState, useEffect, useRef, useCallback } from 'react';
-import "../styles/photoCarousal.css"
+import { useSwipeable } from 'react-swipeable';
+import "../styles/photoCarousal.css";
 
 const PhotoCarousel = ({ imageSrcs }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [fade, setFade] = useState(true);
-  const intervalRef = useRef(null); // Ref to store the interval ID
+  const intervalRef = useRef(null);
 
   const resetInterval = useCallback(() => {
     if (intervalRef.current) {
@@ -12,49 +13,57 @@ const PhotoCarousel = ({ imageSrcs }) => {
     }
 
     intervalRef.current = setInterval(() => {
-      setFade(false); // Start fade-out
+      setFade(false);
       setTimeout(() => {
         setCurrentIndex((prevIndex) => (prevIndex + 1) % imageSrcs.length);
-        setFade(true); // Start fade-in after image change
-      }, 1000); // 1-second fade-out duration
-    }, 5000); // Image changes every 5 seconds
+        setFade(true);
+      }, 1000);
+    }, 5000);
   }, [imageSrcs.length]);
 
   useEffect(() => {
-    resetInterval(); // Start interval when component mounts
-    return () => clearInterval(intervalRef.current); // Clear interval on unmount
+    resetInterval();
+    return () => clearInterval(intervalRef.current);
   }, [imageSrcs.length, resetInterval]);
 
   const handleDotClick = (index) => {
-    setFade(false); // Trigger fade-out
+    setFade(false);
     setTimeout(() => {
       setCurrentIndex(index);
-      setFade(true); // Trigger fade-in after image change
-      resetInterval(); // Reset the interval after dot click
-    }, 500); // Half-second fade-out before dot click update
+      setFade(true);
+      resetInterval();
+    }, 500);
   };
 
   const handleBackClick = () => {
-    setFade(false); // Trigger fade-out
+    setFade(false);
     setTimeout(() => {
       setCurrentIndex((prevIndex) => (prevIndex - 1 + imageSrcs.length) % imageSrcs.length);
-      setFade(true); // Trigger fade-in after image change
-      resetInterval(); // Reset the interval after back click
+      setFade(true);
+      resetInterval();
     }, 500);
   };
 
   const handleNextClick = () => {
-    setFade(false); // Trigger fade-out
+    setFade(false);
     setTimeout(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % imageSrcs.length);
-      setFade(true); // Trigger fade-in after image change
-      resetInterval(); // Reset the interval after next click
+      setFade(true);
+      resetInterval();
     }, 500);
   };
 
+  // Swipe handlers for mobile interaction
+  const handlers = useSwipeable({
+    onSwipedLeft: handleNextClick,
+    onSwipedRight: handleBackClick,
+    preventScrollOnSwipe: true,
+    trackMouse: true,
+  });
+
   return (
     <div>
-      <div className="carousel-container">
+      <div className="carousel-container" {...handlers}>
         <img
           src={imageSrcs[currentIndex]}
           alt={`Slide ${currentIndex + 1}`}

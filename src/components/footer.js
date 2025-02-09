@@ -5,7 +5,7 @@ function Footer() {
     return (
         <footer className='footer'>
             <div className='footer-icons'>
-                <a href='https://join.slack.com/t/builtuiuc/shared_invite/zt-2sf5zdr42-pyiMyNzisGl7f0PMa91Dhw' target='_blank' rel='noopener noreferrer'>
+                <a href='https://tinyurl.com/built-uiuc' target='_blank' rel='noopener noreferrer'>
                     <img src = 'slack-svgrepo-com.svg' alt='twitter svg' />
                 </a>
                 <a href='https://github.com/orgs/B-U-I-L-T-UIUC/repositories' target='_blank' rel='noopener noreferrer'>

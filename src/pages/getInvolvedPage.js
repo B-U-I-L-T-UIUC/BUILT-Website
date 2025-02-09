@@ -40,7 +40,7 @@ function GetInvolvedPage() {
           lead="Bolden Jones"
           netid="boldenj2"
           description="Build technical projects supporting B[U]ILT’s mission!"
-          meeting="Meets 5:00-6:00 PM every Monday at Siebel CS 0222"
+          meeting="Meets 5:00-6:00 PM every Monday at Siebel CS 0212"
           channel="tech-committee"
         ></CommitteeCard>
         <CommitteeCard

@@ -15,7 +15,7 @@ function AboutPage() {
                 <div className="hero-section">
                     <div className="hero-overlay">
                         <h1 className='merriweather'>About Us</h1>
-                        <a href="#mission" className="hero-button">Mission Statement</a>
+                        <div className="hero-button">Mission Statement</div>
                     </div>
                     
                 </div>

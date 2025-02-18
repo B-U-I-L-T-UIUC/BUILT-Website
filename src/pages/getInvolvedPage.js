@@ -48,7 +48,7 @@ function GetInvolvedPage() {
           lead="Alejandro Chavez"
           netid="achav8"
           description="Build and maintain partnership opportunities between B[U]ILT and sponsors!"
-          meeting="Meets every other Wednesday 5:45 at Siebel CS 0212"
+          meeting="Meets every other Thursday 4:30 at Siebel CS 0212"
           channel="external-committee"
         ></CommitteeCard>
         <CommitteeCard
@@ -56,7 +56,7 @@ function GetInvolvedPage() {
           lead="Adela Bautista"
           netid="adelab2"
           description="Plan and organize social events to build B[U]ILT’s community!"
-          meeting="Meeting times vary"
+          meeting="Meets every Friday 3:30-4:30 PM at Siebel CS 0212"
           channel="social-committee"
         ></CommitteeCard>
         <CommitteeCard

@@ -1,6 +1,6 @@
 {
   "name": "built-website",
-  "homepage": "https://b-u-i-l-t-uiuc.github.io/BUILT-Website",
+  "homepage": "https://built-illinois.org/"
   "version": "0.1.0",
   "private": true,
   "dependencies": {

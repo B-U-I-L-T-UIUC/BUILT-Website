@@ -1,6 +1,6 @@
 {
   "name": "built-website",
-  "homepage": "https://built-illinois.org/"
+  "homepage": "https://built-illinois.org/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

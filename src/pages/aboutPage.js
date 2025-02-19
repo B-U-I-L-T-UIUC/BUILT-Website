@@ -69,7 +69,7 @@ const data = [
         title: "Vice President",
         name: "Melissa Aninagyei-Bonsu",
         pronouns: "she/her",
-        email: "mb4@illinois.edu",
+        email: "mba4@illinois.edu",
         description: "Hey I'm Melissa. I'm a Junior studying Computer Science and minoring in Statistics! I am a CS STAR - CS Research Ambassador, and an Undergraduate Research Assistant! My hobbies include running track, watching Tiktok, and doing my hair, makeup, and nails! Catch me in the office on the daily!"
     },
     {

@@ -61,7 +61,7 @@ const data = [
         title: "President",
         name: "Elisa Carillo",
         pronouns: "she/her",
-        email: "email@illinois.edu",
+        email: "elisamc2@illinois.edu",
         description: "Hi! I am Elisa Carrillo, a Senior majoring in Computer Science. I grew up in Brooklyn and spent summers interning in San Diego, Sunnyvale, and Los Angeles. Currently, I develop for the Theorielearn group and serve as an MEP Peer Mentor. B[U]ILT’s growth has been inspiring, and I am grateful for the opportunity to be a leader and contribute to its success. In my free time, I love to watch Reality T.V., spend time with my family, run/hike, and do arts and crafts."
     },
     {
@@ -69,7 +69,7 @@ const data = [
         title: "Vice President",
         name: "Melissa Aninagyei-Bonsu",
         pronouns: "she/her",
-        email: "Placeholder",
+        email: "mb4@illinois.edu",
         description: "Hey I'm Melissa. I'm a Junior studying Computer Science and minoring in Statistics! I am a CS STAR - CS Research Ambassador, and an Undergraduate Research Assistant! My hobbies include running track, watching Tiktok, and doing my hair, makeup, and nails! Catch me in the office on the daily!"
     },
     {
@@ -77,9 +77,8 @@ const data = [
         title: "Treasurer",
         name: "Adrian Lara",
         pronouns: "he/him",
-        email: "ajlara279@gmail.com",
+        email: "adrian11@illinois.edu",
         description: "Hello! My name is Adrian Lara, and I am a junior majoring in Computer Science with a minor in the Hoeft Technology & Management Program. I am a current CS 128 Course Assistant, so you might catch me during office hours. "
-
     },
     {
         image:'eboard-xochi.png',
@@ -127,7 +126,7 @@ const data = [
         title: "Outreach Director",
         name: "Alexis Serrano",
         pronouns: "he/him",
-        email: "aserrano0031@gmail.com",
+        email: "aserr3@illinois.edu",
         description: "Hi, my name is Alexis Serrano, and I’m a fourth year Undergraduate student studying Computer Science. I’m from Berwyn, Illinois and really enjoy playing Tennis (and pickleball), listening to music, and running. As part of B[U]ILT, I’m the Outreach Director, and I look forward to expanding our CS community and helping students explore CS@UIUC. "
     },
     {
@@ -146,5 +145,4 @@ const data = [
         email: "cr46@illinois.edu",
         description: "Hey! My name is Carolina Rosas, I am a junior studying Computer Science with a passion for public speaking and comedy! On campus, I am President of the Illini Speech and Debate Team and Marketing Director for B[U]ILT. In my free time I enjoy arts and crafts, karaoke, and going on walks! "
     },
-    
 ]
